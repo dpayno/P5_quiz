@@ -1,0 +1,33 @@
+
+<h1> Lista de los quizzes </h1>
+
+<table>
+
+	<%let quiz;
+
+	for(let i in quizzes){
+
+		quiz = quizzes[i];%>
+
+		<tr>
+
+			<td>
+
+				Pregunta <%=quiz.id%> :
+
+				<%=quiz.question%>
+
+			</td>
+		</tr>
+
+	<%}%>
+
+</table>
+
+	<p> 
+		<a href='/'>home</a>
+	</p>
+
+	<p> 
+		<a href='/credits'>credits</a>
+	</p>
